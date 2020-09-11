@@ -69,13 +69,23 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="Models\UI\cdsform.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\BLL\BLLCDs.cs" />
     <Compile Include="Models\DAL\DALGravadora.cs" />
+    <Compile Include="Models\DTO\DTOCDs.cs" />
+    <Compile Include="Models\UI\cdsform.aspx.cs">
+      <DependentUpon>cdsform.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Models\UI\cdsform.aspx.designer.cs">
+      <DependentUpon>cdsform.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -89,9 +99,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\BLL\" />
-    <Folder Include="Models\DTO\" />
-    <Folder Include="Models\UI\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
