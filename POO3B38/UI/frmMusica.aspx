@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="cdsform.aspx.cs" Inherits="POO3B38.Models.UI.cdsform" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="frmMusica.aspx.cs" Inherits="POO3B38.Models.UI.cdsform" %>
 
 <!DOCTYPE html>
 
@@ -9,16 +9,22 @@
 </head>
 <body>
     <form id="form1" runat="server" aria-atomic="True">
-        <asp:label ID="lblError" ForeColor="Red" Text=" " runat="server"></asp:label><br/>
+        <asp:label ID="lblWarn" Text=" " runat="server"></asp:label><br/>
         <p>Nome:</p>
         <asp:TextBox ID="txtNome" runat="server" ></asp:TextBox><br/>
-        <p>Preço:</p>
-        <asp:TextBox ID="txtPreco" runat="server" ></asp:TextBox><br/>
-        <p>Lançamento</p>
-        <asp:Calendar ID="calLancamento" runat="server"/><br/>
+        <p>Nome autor:</p>
+        <asp:TextBox ID="txtAutor" runat="server" ></asp:TextBox><br/>
+        <p>idGravadora</p>
+        <asp:TextBox ID="txtGravadora" runat="server"></asp:TextBox><br/>
+        <p>idCd</p>
+        <asp:TextBox ID="txtCd" runat="server" ></asp:TextBox><br/>
         <asp:Button ID="btnInserir" runat="server" Text="Inserir" OnClick="btnInserir_Click"/><br/>
-        <asp:GridView ID="GridCds" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None">
+        <asp:GridView ID="GridCds" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" OnRowCancelingEdit="GridCds_RowCancelingEdit" OnRowDeleting="GridCds_RowDeleting" OnRowEditing="GridCds_RowEditing" OnRowUpdating="GridCds_RowUpdating">
             <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
+            <Columns>
+                <asp:CommandField ShowEditButton="True"/>
+                <asp:CommandField ShowDeleteButton="True" />
+            </Columns>
             <EditRowStyle BackColor="#999999" />
             <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
             <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />

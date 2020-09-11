@@ -24,13 +24,13 @@ namespace POO3B38.Models.UI
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Controle lblError.
+        /// Controle lblWarn.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblError;
+        protected global::System.Web.UI.WebControls.Label lblWarn;
 
         /// <summary>
         /// Controle txtNome.
@@ -42,22 +42,31 @@ namespace POO3B38.Models.UI
         protected global::System.Web.UI.WebControls.TextBox txtNome;
 
         /// <summary>
-        /// Controle txtPreco.
+        /// Controle txtAutor.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPreco;
+        protected global::System.Web.UI.WebControls.TextBox txtAutor;
 
         /// <summary>
-        /// Controle calLancamento.
+        /// Controle txtGravadora.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar calLancamento;
+        protected global::System.Web.UI.WebControls.TextBox txtGravadora;
+
+        /// <summary>
+        /// Controle txtCd.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtCd;
 
         /// <summary>
         /// Controle btnInserir.
